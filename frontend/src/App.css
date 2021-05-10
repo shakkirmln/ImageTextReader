@@ -1,0 +1,96 @@
+.mg20 {
+  margin: 20px;
+}
+
+.my20 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+}
+
+.mr20 {
+  margin-right: 20px;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  margin: auto;
+}
+
+.preview {
+  max-width: 200px;
+}
+
+.btn-upload {
+  position: absolute !important;
+  right: 10px;
+}
+
+.file-name {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: inline-block;
+  max-width: 300px;
+  vertical-align: middle;
+}
+
+.list-group {
+  padding: 0;
+  margin: 0;
+}
+
+.list-header {
+  margin-top: 10px !important;
+}
+
+.upload-message {
+  font-weight: bold;
+  color: #63a84e;
+}
+
+.upload-message.error {
+  color: #da4148;
+}
+
+.btn-choose {
+  margin-right: 10px !important;
+}
+
+.out {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.outtxt {
+  width: 600px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    position: relative;
+    width: auto;
+    margin: auto;
+  }
+  .btn-choose {
+    margin-right: 10px !important;
+  }
+  .file-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 300px;
+    vertical-align: middle;
+  }
+  .btn-upload {
+    position: absolute !important;
+    right: 25px;
+  }
+  .outtxt {
+    width: 100%;
+  }
+}
