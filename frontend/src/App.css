@@ -33,7 +33,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   display: inline-block;
-  max-width: 300px;
+  max-width: 50%;
   vertical-align: middle;
 }
 
@@ -78,19 +78,19 @@
   .btn-choose {
     margin-right: 10px !important;
   }
-  .file-name {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    display: inline-block;
-    max-width: 300px;
-    vertical-align: middle;
-  }
   .btn-upload {
     position: absolute !important;
     right: 25px;
   }
   .outtxt {
     width: 100%;
+  }
+  .file-name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: inline-block;
+    max-width: 30%;
+    vertical-align: middle;
   }
 }

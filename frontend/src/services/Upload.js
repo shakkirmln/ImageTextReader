@@ -4,13 +4,12 @@ class UploadFilesService {
   upload(file, onUploadProgress) {
     let formData = new FormData();
 
-    formData.append("preprocess", "thresh");
     formData.append("image", file);
 
     return http.post("/api/ocr", formData, {
       headers: {
-        "Content-Type": "false",
-        "Process-Data": "false",
+        "Content-Type": false,
+        "Process-Data": false,
       },
       onUploadProgress,
     });

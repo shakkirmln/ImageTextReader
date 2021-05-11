@@ -65,6 +65,15 @@ export default class AppFields extends Component {
           isError: false
         });
       })
+      .catch((err) => {
+        this.setState({
+          progress: 0,
+          message: "Could not upload the image!, Please try again",
+          currentFile: undefined,
+          imgtxt: "",
+          isError: true
+        });
+      });
   }
 
   render() {
