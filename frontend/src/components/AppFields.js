@@ -56,6 +56,7 @@ export default class AppFields extends Component {
     UploadService.upload(this.state.currentFile, (event) => {
       this.setState({
         progress: Math.round((100 * event.loaded) / event.total),
+        message: "Please wait, uploading and processing the image...",
       });
     })
       .then((response) => {
