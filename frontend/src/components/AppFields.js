@@ -68,7 +68,7 @@ export default class AppFields extends Component {
       .catch((err) => {
         this.setState({
           progress: 0,
-          message: "Could not upload the image!, Please try again",
+          message: "Timeout!, processing the image took more time",
           currentFile: undefined,
           imgtxt: "",
           isError: true
